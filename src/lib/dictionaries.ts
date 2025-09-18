@@ -16,6 +16,9 @@ const dict = {
     },
     sections: { projects: "Projets sélectionnés", skills: "Compétences", about: "Présentation", contact: "Contact" },
     skills: {
+      pageTitle: "Stack technique & posture professionnelle",
+      intro:
+        "Panorama des compétences mobilisées sur mes projets en data, IA et développement logiciel, ainsi que celles développées à IMT Mines Alès.",
       techHeading: "Compétences techniques",
       techGroups: [
         {
@@ -66,16 +69,14 @@ const dict = {
             "Intégration d'outils métiers (PRF, DUERP, modèles financiers)",
           ],
         },
-      ],
-      learningHeading: "Compétences en cours d'acquisition",
-      learningItems: [
-        "Statistiques et probabilités avancées",
-        "Mathématiques pour le machine learning et l'optimisation",
-        "Apprentissage automatique avancé",
-        "Deep learning & reinforcement learning",
-        "Analyse de décision",
-        "IA cognitive, interaction homme-machine",
-        "Traitement d'image, traitement de texte, gestion des connaissances",
+        {
+          title: "Conception de business models",
+          items: [
+            "Études de marché et structuration de modèles",
+            "Prévisions et outils d’aide à la décision",
+            "Applications mobilité, digital, industrie",
+          ],
+        },
       ],
       professionalHeading: "Compétences professionnelles",
       professionalGroups: [
@@ -111,6 +112,8 @@ const dict = {
           title: "Langages & bibliothèques",
           items: [
             "Python",
+            "R",
+            "Java",
             "Pandas",
             "scikit-learn",
             "OpenPyXL",
@@ -118,6 +121,7 @@ const dict = {
             "Selenium",
             "Treys",
             "Django",
+            "React",
             "TailwindCSS",
             "Matplotlib",
             "Seaborn",
@@ -131,16 +135,16 @@ const dict = {
           items: ["HTML", "CSS", "JavaScript (bases)"],
         },
         {
-          title: "Design & graphisme",
-          items: ["Photoshop", "Illustrator"],
-        },
-        {
           title: "Cartographie & API",
           items: ["Google Maps API", "Folium", "GeoPandas"],
         },
         {
           title: "Outils de développement",
           items: ["Git", "VS Code", "Jupyter Notebook"],
+        },
+        {
+          title: "Excel & automatisation",
+          items: ["Excel avancé", "VBA", "Macros", "Scripts Python"],
         },
       ],
     },
@@ -174,7 +178,10 @@ const dict = {
     },
     sections: { projects: "Selected projects", skills: "Skills", about: "Overview", contact: "Contact" },
     skills: {
-      techHeading: "Technical skills",
+      pageTitle: "Technical stack & professional mindset",
+      intro:
+        "Overview of the data, AI and software capabilities I rely on across projects, along with what I keep sharpening at IMT Mines Alès.",
+      techHeading: "Technical competencies",
       techGroups: [
         {
           title: "Data Science & Machine Learning",
@@ -224,16 +231,14 @@ const dict = {
             "Embedding business tooling (PRF, DUERP, financial models)",
           ],
         },
-      ],
-      learningHeading: "Currently learning",
-      learningItems: [
-        "Advanced statistics and probability",
-        "Mathematics for machine learning and optimisation",
-        "Advanced machine learning",
-        "Deep learning and reinforcement learning",
-        "Decision analysis",
-        "Cognitive AI and human-computer interaction",
-        "Image, text and knowledge processing",
+        {
+          title: "Business model design",
+          items: [
+            "Market research and scenario building",
+            "Forecasts and decision-support tooling",
+            "Projects across mobility, digital, industry",
+          ],
+        },
       ],
       professionalHeading: "Professional capabilities",
       professionalGroups: [
@@ -269,6 +274,8 @@ const dict = {
           title: "Languages & libraries",
           items: [
             "Python",
+            "R",
+            "Java",
             "Pandas",
             "scikit-learn",
             "OpenPyXL",
@@ -276,6 +283,7 @@ const dict = {
             "Selenium",
             "Treys",
             "Django",
+            "React",
             "TailwindCSS",
             "Matplotlib",
             "Seaborn",
@@ -289,16 +297,16 @@ const dict = {
           items: ["HTML", "CSS", "JavaScript (basics)"],
         },
         {
-          title: "Design",
-          items: ["Photoshop", "Illustrator"],
-        },
-        {
           title: "Mapping & APIs",
           items: ["Google Maps API", "Folium", "GeoPandas"],
         },
         {
           title: "Development tooling",
           items: ["Git", "VS Code", "Jupyter Notebook"],
+        },
+        {
+          title: "Excel & automation",
+          items: ["Advanced Excel", "VBA", "Macros", "Python scripts"],
         },
       ],
     },

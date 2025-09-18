@@ -4,9 +4,9 @@ import { isLocale } from "@/lib/i18n";
 export default async function SkillsPage({
   params,
 }: {
-  params: Promise<{ lang: string }>;
+  params: { lang: string };
 }) {
-  const { lang } = await params;
+  const { lang } = params;
   const safeLang = isLocale(lang) ? lang : "fr";
   const t = await getDictionary(safeLang);
   const skillData = t.skills;
@@ -18,15 +18,9 @@ export default async function SkillsPage({
           {t.sections.skills}
         </p>
         <h1 className="mt-3 text-3xl font-semibold text-white">
-          {safeLang === "fr"
-            ? "Stack technique & posture professionnelle"
-            : "Technical stack & professional strengths"}
+          {skillData.pageTitle}
         </h1>
-        <p className="mt-2 max-w-3xl text-neutral-300">
-          {safeLang === "fr"
-            ? "Panorama des compétences que je mobilise sur mes projets data, IA et logiciels, ainsi que celles en cours d'acquisition à IMT Mines Alès."
-            : "Overview of the skills I apply across data, AI and software projects, plus the topics I'm currently mastering at IMT Mines Alès."}
-        </p>
+        <p className="mt-2 max-w-3xl text-neutral-300">{skillData.intro}</p>
       </header>
 
       <div className="space-y-12">
@@ -55,21 +49,6 @@ export default async function SkillsPage({
                 </div>
               ))}
             </div>
-          </section>
-        ) : null}
-
-        {skillData.learningItems?.length ? (
-          <section className="rounded-2xl border border-white/10 bg-white/[0.03] p-6">
-            <h2 className="text-xl font-semibold text-white">
-              {skillData.learningHeading}
-            </h2>
-            <ul className="mt-4 grid gap-2 text-sm text-neutral-300 md:grid-cols-2">
-              {skillData.learningItems.map((item: string, idx: number) => (
-                <li key={`learning-${idx}`} className="leading-snug">
-                  {item}
-                </li>
-              ))}
-            </ul>
           </section>
         ) : null}
 

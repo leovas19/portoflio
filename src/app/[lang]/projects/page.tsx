@@ -5,9 +5,9 @@ import { isLocale } from "@/lib/i18n";
 export default async function ProjectsPage({
   params,
 }: {
-  params: Promise<{ lang: string }>;
+  params: { lang: string };
 }) {
-  const { lang } = await params;
+  const { lang } = params;
   const safeLang = isLocale(lang) ? lang : "fr";
   const t = await getDictionary(safeLang);
 
