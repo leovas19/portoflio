@@ -4,6 +4,7 @@ import Link from "next/link";
 import { locales, isLocale } from "@/lib/i18n";
 import { getDictionary } from "@/lib/dictionaries";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Léo Vasseur – Portfolio",
@@ -42,6 +43,7 @@ export default async function RootLayout({
         <footer className="mt-10 text-center text-xs text-neutral-500 py-8 border-t border-white/10">
           © {new Date().getFullYear()} {dict.site.owner}. {dict.site.rights}
         </footer>
+        <Analytics />
       </body>
     </html>
   );
