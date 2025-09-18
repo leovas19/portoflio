@@ -118,17 +118,6 @@ Stage de 14 semaines au centre de développement Flex-N-Gate d’Audincourt, int
         "Prompt Engineering",
         "Ingénierie des exigences",
       ],
-      context:
-        "Projet académique avec Respect-IT. Transformation de diagrammes Objectiver en spécifications textuelles via LLM.",
-      missions: [
-        "Extraction XML des diagrammes KAOS",
-        "Prétraitement et structuration des données",
-        "Génération de textes avec des modèles de langage",
-        "Évaluation et amélioration des prompts",
-      ],
-      skills: ["Python", "LLM", "NLP", "Prompt Engineering"],
-      impact:
-        "Amélioration de la qualité et de la cohérence des spécifications générées automatiquement.",
       content: `
 ### Contexte
 Respect-IT développe Objectiver, un outil de modélisation basé sur les diagrammes KAOS. Le projet visait à industrialiser la conversion de ces modèles en spécifications textuelles grâce à l’IA, afin de réduire l’effort manuel des consultants.  
@@ -171,17 +160,6 @@ Respect-IT développe Objectiver, un outil de modélisation basé sur les diagra
         "Prompt Engineering",
         "Requirements Engineering",
       ],
-      context:
-        "Academic project with Respect-IT. Converting Objectiver diagrams into textual specifications with LLMs.",
-      missions: [
-        "XML extraction from KAOS diagrams",
-        "Data preprocessing and structuring",
-        "Text generation with language models",
-        "Evaluation and prompt optimization",
-      ],
-      skills: ["Python", "LLM", "NLP", "Prompt Engineering"],
-      impact:
-        "Improved quality and consistency of automatically generated specifications.",
       content: `
 ### Context
 Respect-IT builds Objectiver, a KAOS-based requirements engineering platform. The goal was to modernize how KAOS models are transformed into human-readable specifications using AI, cutting down manual effort for consultants.  
