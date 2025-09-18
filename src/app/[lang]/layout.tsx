@@ -21,6 +21,7 @@ export default async function RootLayout({
   const { lang: rawLang } = await params;
   const lang = isLocale(rawLang) ? rawLang : "fr";
   const dict = await getDictionary(lang);
+  const localeOptions = Array.from(locales);
 
   return (
     <html lang={lang}>
@@ -34,7 +35,7 @@ export default async function RootLayout({
               <Link href={`/${lang}#about`} className="hover:text-white">{dict.nav.about}</Link>
               <Link href={`/${lang}#contact`} className="hover:text-white">{dict.nav.contact}</Link>
             </nav>
-            <LanguageSwitcher current={lang} locales={locales} />
+            <LanguageSwitcher current={lang} locales={localeOptions} />
           </div>
         </header>
         {children}
