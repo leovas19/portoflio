@@ -6,6 +6,7 @@ import { getDictionary } from "@/lib/dictionaries";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { Analytics } from "@vercel/analytics/next";
 
+
 export const metadata: Metadata = {
   title: "Léo Vasseur – Portfolio",
   description: "Portfolio pro FR/EN – Data, IA, Logiciels",
